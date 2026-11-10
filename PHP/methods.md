@@ -51,3 +51,19 @@
   )  
 )
 ```
+
+# 引数の参照渡し（リファレンス渡し） 
+定義する関数の引数の前に「＆」を付加する。 
+```
+<?php 
+function set_bono(&$var) { 
+  $var = 'bonobono'; 
+} 
+
+$name = 'hogehoge'; 
+echo $name . '<br>'; /* hogehoge 表示 */ 
+
+set_bono($name); 
+echo $name . '<br>'; /* bonobono 表示 */ 
+?>
+```

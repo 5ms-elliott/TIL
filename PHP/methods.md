@@ -70,7 +70,7 @@ echo $name . '<br>'; /* bonobono 表示 */
 $name と $var は同じメモリアドレスを指し示す（エイリアス、別名）ので、 呼び出し元の変数$nameも'bonobono'に書き換わる。 
 
 # array_column() 
-多次元配列の中から特定のカラムの値を簡単に抽出する。 
+多次元配列の中から特定のカラムの値を簡単に抽出する。  
 ```array_column(array $array, int|string|null $column_key, int|string|null $index_key = null): array ```
 
 ### 使用例 

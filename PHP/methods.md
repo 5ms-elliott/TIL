@@ -67,3 +67,27 @@ set_bono($name);
 echo $name . '<br>'; /* bonobono 表示 */ 
 ?>
 ```
+$name と $var は同じメモリアドレスを指し示す（エイリアス、別名）ので、 呼び出し元の変数$nameも'bonobono'に書き換わる。 
+
+# array_column() 
+多次元配列の中から特定のカラムの値を簡単に抽出する。 
+```array_column(array $array, int|string|null $column_key, int|string|null $index_key = null): array ```
+
+### 使用例 
+```
+$books = [ 
+  ['book_id' => 1, 'book_name' => 'PHP入門'], 
+  ['book_id' => 2, 'book_name' => 'JavaScript基礎'], 
+  ['book_id' => 3, 'book_name' => 'Python応用'] 
+]; 
+
+$result = array_column($books, 'book_name'); 
+print_r($result); 
+
+array 
+( 
+  [0] => PHP入門 
+  [1] => JavaScript基礎 
+  [2] => Python応用 
+)
+```

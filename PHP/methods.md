@@ -91,10 +91,8 @@ array
   [2] => Python応用 
 )
 ```
-【is_scaler()】 
 
-指定した式がスカラー値として評価されるかを調べます。 
-
-スカラー値：　int, float, string, bool のいずれか 
-
-is_scalar(mixed $value): bool 
+# is_scaler()
+指定した式がスカラー値として評価されるかを調べます。   
+スカラー値：　int, float, string, bool のいずれか  
+```is_scalar(mixed $value): bool``` 
